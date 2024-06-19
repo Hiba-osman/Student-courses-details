@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grades map</title>
+</head>
+<body>
+    <table border="1" Cellpadding="10" align="center">
+        <caption><h2>Grades map</h2></caption>
+        <thead>
+            <tr>
+                <th><button onclick="Adetails()">A</button></th>
+                <th><button onclick="Bdetails()">B</button></th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th><button onclick="Cdetails()">C</button></th>
+                <th><button onclick="Ddetails()">D</button></th>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <p id="A"></p>
+    
+    <p id="B"></p>
+    
+    <p id="C"></p>
+    
+    <p id="D"></p>
+    <script>
+        function Adetails() {
+          document.getElementById("A").innerHTML="A is given when the student scores 90% - 100% ";
+          }
+          function Bdetails() {
+          document.getElementById("B").innerHTML="B is given when the student scores 80% - 89.9%";
+          }
+          function Cdetails() {
+          document.getElementById("C").innerHTML="C is given when the student scores 70% - 79.9%";
+          }
+          function Ddetails() {
+          document.getElementById("D").innerHTML="D is given when the student scores 60% - 69.9%";
+        }
+    </script>
+    
+    <center>
+       <input name="previous" action="action" onclick="window.history.go(-1); return false;" type="submit" value="Previous"/>
+      <button><a href="main1.html"> Home </a></button>
+      <button><a href="grades.html" target="main"> Next </a></button>
+     </center>
+      
+</body>
+</html>
